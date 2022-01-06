@@ -1,0 +1,180 @@
+
+.header-partial {
+  color: rgb(235, 232, 63);
+  background-color: #090909;
+  height: 100vh;
+  width: 24%;
+  float: left;
+  overflow: auto;
+  overflow: hidden;
+  align-items: center;
+  position: fixed;
+}
+.body-part {
+  color: aqua;
+  height: 100vh;
+  width: 400px;
+  background-color: #202020;
+  width: 1600px;
+  float: right;
+}
+.rootdiv {
+  display: flex;
+  align-items: center;
+}
+.leftpaneimg {
+  height: 60px;
+  width: 156px;
+  margin-left: 56px;
+  color: #bbb;
+}
+.image-head {
+  display: block;
+  position: absolute;
+  top: 230px;
+  left: 3%;
+}
+
+.head-uls {
+  list-style: none;
+  color: white;
+  margin-top: 80px;
+  padding-left: 100px;
+  text-decoration: none;
+}
+
+.home-button {
+  display: none;
+}
+.head-links {
+  text-decoration: none;
+  list-style: none;
+}
+.home-text {
+  text-decoration: none;
+  font-size: 22px;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: white;
+  position: absolute;
+  top: 357px;
+  left: 60px;
+  transition-duration: 0.5s;
+}
+.about-button {
+  display: none;
+}
+.about-text {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  font-family: "Open Sans Condensed", sans-serif;
+  padding-top: 25px;
+  top: 380px;
+  left: 60px;
+  font-size: 22px;
+  transition-duration: 0.5s;
+}
+.contact-text {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  font-family: "Open Sans Condensed", sans-serif;
+  padding-top: 54px;
+  top: 400px;
+  left: 60px;
+  font-size: 22px;
+  transition-duration: 0.5s;
+}
+.contact-button {
+  display: none;
+}
+
+.home-text:hover {
+  transform: scale(1.3);
+}
+.about-text:hover {
+  transform: scale(1.3);
+}
+.contact-text:hover {
+  transform: scale(1.3);
+}
+
+.credits-text {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  font-family: "Open Sans Condensed", sans-serif;
+  padding-top: 54px;
+  top: 500px;
+  left: 70px;
+  font-size: 16px;
+}
+
+.shastri-text {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  font-family: "Open Sans Condensed", sans-serif;
+  padding-top: 54px;
+  top: 530px;
+  left: 70px;
+  font-size: 16px;
+  transition-duration: 0.5s;
+}
+
+.shastri-text:hover {
+  transform: scale(1.1);
+  color: antiquewhite;
+}
+
+@media (max-width: 1025px) {
+  .header-partial {
+    width: 100%;
+    align-items: center;
+    order: 1;
+    height: 100px;
+  }
+  .body-part {
+    width: 100%;
+    order: 2;
+  }
+  .rootdiv {
+    display: flex;
+    flex-direction: column;
+  }
+  .image-head {
+    margin-top: -205px;
+  }
+  .leftpaneimg {
+    height: 47px;
+    width: 78px;
+    margin-left: 15px;
+  }
+  .home-button {
+    display: block;
+    float: right;
+    padding-right: 20px;
+    padding-top: 40px;
+  }
+  .home-text {
+    display: none;
+  }
+  .about-text {
+    display: none;
+  }
+  .about-button {
+    display: block;
+    float: right;
+    padding-right: 20px;
+    padding-top: 40px;
+  }
+  .contact-button {
+    display: block;
+    float: right;
+    padding-right: 20px;
+    padding-top: 40px;
+  }
+  .credits-text {
+    display: none;
+  }
+}
